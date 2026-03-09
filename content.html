@@ -6,7 +6,7 @@
 print(function_with_defaults(5)) # y takes the default value of 10
 print(function_with_defaults(5, 3)) # y takes the provided value of 3</py-cell>
 
-<p>When defining a parameter list, positional parameters must be specified first, or there will be an error:</p>
+<p>When defining a parameter list, positional parameters (those without default values) must be specified first, or there will be an error:</p>
 
 <py-cell>def invalid_function(y=10, x):
     return x + y</py-cell>
