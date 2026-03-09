@@ -24,6 +24,13 @@ print(quadratic(2, c=1)) # uses default a=1, b=1, overrides default c=0 with c=1
 print(quadratic(b=3, c=4, x=2)) 
 print(quadratic(2, 2, 3, 4)) # overrides all defaults with positional arguments</py-cell>
 
+<p>In the argument list, positional arguments must be specified before keyword arguments or there will be an error:</p>
+
+<py-cell>def add(a, b):
+    return a + b
+
+print(add(a=1, 2)</py-cell>
+
 <h2>Formatting Convention for Equals Signs</h2>
 
 <p>In Python style conventions, default values in parameter lists and keyword arguments in function calls are typically written with no spaces around <code>=</code>, as in the examples above.</p>
