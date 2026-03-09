@@ -1,0 +1,21 @@
+{
+    "title": "Python: Keyword and Default Arguments",
+    "slug": "python-keyword-and-default-arguments",
+    "description": "Use positional arguments, keyword arguments, and default values in Python function definitions and calls.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python"
+    ],
+    "duration": 4,
+    "prerequisites": [
+        "programming-default-function-arguments",
+        "programming-keyword-arguments",
+        "programming-calling-functions",
+        "python-defining-functions"
+    ],
+    "related": [
+        "exercise-python-largest-with-optional-argument"
+    ]
+}
