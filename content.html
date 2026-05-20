@@ -6,12 +6,12 @@
 print(function_with_defaults(5)) # y takes the default value of 10
 print(function_with_defaults(5, 3)) # y takes the provided value of 3</py-cell>
 
-<p>When defining a parameter list, positional parameters must be specified first, or there will be an error:</p>
+<p>When defining a parameter list, positional parameters (those without default values) must be specified first, or there will be an error:</p>
 
 <py-cell>def invalid_function(y=10, x):
     return x + y</py-cell>
 
-<h2>Positional and keyword arguments</h2>
+<h2>Positional and Keyword Arguments</h2>
 
 <p>Positional arguments must come first in the the argument list. These are passed into parameters by their position. Keyword arguments must be specified after positional arguments and are passed in by their parameter name. The order of keyword arguments does not matter.</p>
 
@@ -23,6 +23,13 @@ print(quadratic(2, c=1)) # uses default a=1, b=1, overrides default c=0 with c=1
 # Non-optional arguments can be passed as keyword arguments. Order is unimportant.
 print(quadratic(b=3, c=4, x=2)) 
 print(quadratic(2, 2, 3, 4)) # overrides all defaults with positional arguments</py-cell>
+
+<p>In the argument list, positional arguments must be specified before keyword arguments or there will be an error:</p>
+
+<py-cell>def add(a, b):
+    return a + b
+
+print(add(a=1, 2))</py-cell>
 
 <h2>Formatting Convention for Equals Signs</h2>
 
